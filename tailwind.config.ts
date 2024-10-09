@@ -11,6 +11,12 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        lightBrown:"#F5F5F5"
+      },
+      fontSize: {
+        'xxs': '0.625rem', // 10px
+        'xxl': '1.75rem', // 28px
+        'custom-font': '14px', // 48px
       },
     },
   },
