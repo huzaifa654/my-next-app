@@ -34,7 +34,7 @@ export default function Sales() {
     const EcommersceItems = () => {
         return (
             <div>
-                <div className='p-2 w-60 bg-lightBrown py-3 rounded-md'>
+                <div className='p-2 w-60 bg-lightBrown py-3 rounded-md '>
                     <div className='flex justify-between'>
                         <div className='bg-red-600 px-2 self-start rounded-md'>
                             <p className='text-white text-custom-font'>-40%</p>
@@ -77,13 +77,14 @@ export default function Sales() {
             <div className="w-full overflow-x-auto ml-11 mt-4">
                 <div className="flex space-x-4 p-4">
                     <EcommersceItems />
-                    <Rating
-                        onClick={handleRating}
-                        onPointerEnter={onPointerEnter}
-                        onPointerLeave={onPointerLeave}
-                        onPointerMove={onPointerMove}
-                        style={{ flexDirection: "row" }}
-                    />
+                    <EcommersceItems />
+                    <EcommersceItems />
+                    <EcommersceItems />
+                    <EcommersceItems />
+                    <EcommersceItems />
+                    <EcommersceItems />
+
+
                 </div>
             </div>
 
