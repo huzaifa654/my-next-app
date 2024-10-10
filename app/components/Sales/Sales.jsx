@@ -9,7 +9,8 @@ import Wishlist from '../../assets/Wishlist.png'
 import eye from '../../assets/eye.png'
 import { Rating } from 'react-simple-star-rating'
 import { CssBaseline, ThemeProvider, createTheme } from '@mui/material';
-
+import Title from "../Title/Title"
+import EcomSalesTitle from '../E-ComSales/EcomSalesTitle'
 
 export default function Sales() {
     const Data = [
@@ -99,20 +100,16 @@ export default function Sales() {
 
     const Button = () => {
         return (
-            <div className='flex bg-red-600 cursor-pointer w-40 p-2 rounded-md py-3 items-center self-center text-white text-sm text-center justify-center my-3'>
+            <div className='flex bg-red-500 cursor-pointer w-40 p-2 rounded-md py-3 items-center self-center text-white text-sm text-center justify-center my-3'>
                 <p className='self-center text-center'>View All Products</p>
             </div>
         )
     }
     return (
         <div className='flex flex-col'>
-            <div className='flex px-16 mt-28'>
-                <div className='h-10 w-5 bg-red-600 rounded-md' />
-
-                <p className='text-red-600 self-center font-semibold ml-6'>Today’s</p>
-            </div>
+            <Title title={"Today’s"} />
             <div className='flex'>
-                <h2 className='font-bold text-4xl mt-6 px-16'>Flash Sales</h2>
+                <EcomSalesTitle title={"Flash Sales"} />
                 <SalesTime title={"Days"} time={"03"} ml={'10'} />
                 <SalesTime title={"Hours"} time={"23"} ml={'5'} />
                 <SalesTime title={"Minutes"} time={"19"} ml={'5'} />
@@ -127,9 +124,7 @@ export default function Sales() {
                     })}
                 </div>
                 <Button />
-
             </div>
-
         </div>
     )
 }
