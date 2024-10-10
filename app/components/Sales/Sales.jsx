@@ -65,7 +65,7 @@ export default function Sales() {
                     style={{ width: 270 }}
                 >
                     <div className='flex justify-between'>
-                        <div className='bg-red-600 p-2 px-4 self-start rounded-md'>
+                        <div className='bg-red-500 p-1 px-4 self-start rounded-md w-55'>
                             <p className='text-white text-custom-font'>{item?.discount}</p>
                         </div>
                         <div>
@@ -99,7 +99,7 @@ export default function Sales() {
 
     const Button = () => {
         return (
-            <div className='flex bg-red-600 cursor-pointer w-40 p-2 rounded-md py-3 items-center self-center text-white text-sm text-center justify-center mb-3'>
+            <div className='flex bg-red-600 cursor-pointer w-40 p-2 rounded-md py-3 items-center self-center text-white text-sm text-center justify-center my-3'>
                 <p className='self-center text-center'>View All Products</p>
             </div>
         )
