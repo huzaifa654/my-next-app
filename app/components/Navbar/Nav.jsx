@@ -6,14 +6,15 @@ import Cart1 from '../../assets/Cart1.png'
 
 
 import Image from 'next/image'
+import Link from 'next/link'
 export default function Nav() {
     const Routes = () => {
         return (
             <ul className='flex text-lg gap-20  mt-4'>
-                <li className='cursor-pointer'>Home</li>
-                <li className='cursor-pointer'>Contact</li>
-                <li className='cursor-pointer'>About</li>
-                <li className='cursor-pointer'>Sign up</li>
+                <Link href={'/'} className='cursor-pointer'>Home</Link>
+                <Link href={'/Contact'} className='cursor-pointer'>Contact</Link>
+                <Link href={'/'} className='cursor-pointer'>About</Link>
+                <Link href={'/'} className='cursor-pointer'>Sign up</Link>
             </ul>)
     }
 
