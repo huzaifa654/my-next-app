@@ -9,7 +9,7 @@ import Image from 'next/image'
 export default function Nav() {
     const Routes = () => {
         return (
-            <ul className='flex text-lg gap-20'>
+            <ul className='flex text-lg gap-20  mt-4'>
                 <li className='cursor-pointer'>Home</li>
                 <li className='cursor-pointer'>Contact</li>
                 <li className='cursor-pointer'>About</li>
@@ -28,9 +28,9 @@ export default function Nav() {
 
     return (
         <div className='flex mt-4  justify-between px-20 border-b-2 pb-5  sticky top-0 z-50	items-center bg-white'>
-            <h2 className='text-xl font-semibold '>Exclusive</h2>
+            <h2 className='text-xl font-semibold  mt-4'>Exclusive</h2>
             <Routes />
-            <div className='flex'>
+            <div className='flex  mt-4'>
                 <Searchbar />
                 <Image src={Wishlist} width={30} height={30} objectPosition='contain' className='self-center ml-5' color='black' />
                 <Image src={Cart1} width={30} height={30} objectPosition='contain' className='self-center ml-5' color='black' />
