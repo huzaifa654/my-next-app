@@ -19,8 +19,8 @@ const Button = () => {
 
 const Product = () => {
     return (
-        <div className='flex flex-col  my-7'>
-            <div className='flex bg-lightBrown rounded-md p-2 py-3 flex-col ml-16 h-250'>
+        <div className='flex flex-col my-7 cursor-pointer'>
+            <div className='flex bg-lightBrown rounded-md p-2 py-3 flex-col ml-16 h-250 hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1'>
                 <div className="flex">
                     <div
                         className='flex justify-center items-center self-center'
@@ -29,12 +29,12 @@ const Product = () => {
                     </div>
                     <div className="flex-col flex ">
                         <div
-                            className='self-end bg-white rounded-full'
+                            className='self-end bg-white rounded-full hover:bg-gray-300 transition duration-300 ease-in-out'
                             style={{ width: 25, height: 25 }}>
                             <Image src={Wishlist} width={'100%'} height={'100%'} />
                         </div>
                         <div
-                            className='self-end bg-white rounded-full mt-3'
+                            className='self-end bg-white rounded-full mt-3 hover:bg-gray-300 transition duration-300 ease-in-out'
                             style={{ width: 25, height: 25 }}>
                             <Image src={eye} width={'100%'} height={'100%'} />
                         </div>
@@ -46,6 +46,7 @@ const Product = () => {
                 <p className='text-red-600 font-semibold'>$120</p>
             </div>
         </div>
+
     )
 }
 
@@ -59,6 +60,7 @@ const BestProducts = () => {
                 <Button />
             </div>
             <div className='flex gap-2 overflow-auto'>
+                <Product />
                 <Product />
                 <Product />
                 <Product />
