@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <div className="px-4 py-3 bg-white">
-      <Nav />
+      
       <div className="flex px-20">
         <Categories />
         <Hero />

@@ -27,7 +27,7 @@ export default function Nav() {
     }
 
     return (
-        <div className='flex mt-4  justify-between px-20 border-b-2 pb-5 items-center '>
+        <div className='flex mt-4  justify-between px-20 border-b-2 pb-5  sticky top-0 z-50	items-center bg-white'>
             <h2 className='text-xl font-semibold '>Exclusive</h2>
             <Routes />
             <div className='flex'>
