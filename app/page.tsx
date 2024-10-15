@@ -4,6 +4,8 @@ import Categories from "./components/Categories/Categories"
 import Hero from "./components/Hero/Hero"
 import Sales from "./components/Sales/Sales"
 import Browsecat from "./components/Browsecat/Browsecat"
+import BestProducts from "./components/BestProducts/BestProducts"
+
 
 export default function Home() {
 
@@ -16,6 +18,7 @@ export default function Home() {
       </div>
       <Sales />
       <Browsecat />
+      <BestProducts/>
 
     </div>
   );

@@ -80,7 +80,7 @@ export default function Browsecat() {
             <Title title={"Categories"} />
             <div className='flex justify-between'>
                 <EcomSalesTitle title={"Browse By Category"} />
-                <div className='flex gap-2 mr-4'>
+                <div className='flex gap-2 mr-16'>
                     <ForwardButton src={back} onClick={incrementIndex} />
                     <ForwardButton src={forward} onClick={decrementIndex} />
                 </div>
